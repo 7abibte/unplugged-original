@@ -321,13 +321,14 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    width: 100%;
 }
 
 .faq .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     margin: 50px 0 0 0;
 }
 
@@ -335,9 +336,10 @@ aside {
     margin-bottom: 40px;
 }
 
-.faq-content {
-    width: 100%;   
+.faq .faq-content { 
+    width: 100%;
 }
+
 
 /* ==========================================================================
    Helper classes
@@ -432,6 +434,7 @@ aside {
 
 /* ==========================================================================
         Tablet Styles
+    Homepage
 ========================================================================== */
 
 @media only screen and (min-width: 768px) {
@@ -468,7 +471,8 @@ aside {
     }
     
     .form input {
-        width: 100%;
+        width: 99%;
+        box-sizing: border-box;
     }
 
 
@@ -481,7 +485,7 @@ aside {
     
 /* - Reviews - */
 
-    .reviews article{
+    .reviews article {
         display: flex;
     }
     
@@ -489,14 +493,17 @@ aside {
         width: 100%;
     }
     
-    
     .reviews img {
         width: 40%;
+        padding-right: 20px;
     }
 
     
 /* - Footer - */
 
+    footer .content-wrapper {
+        width: 100%;
+        }
 
     .footer-content {
         display: flex;
@@ -522,14 +529,16 @@ aside {
     About Page
 =====================================================================
 */
+   
     .mission-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
     }
 
     .mission-content p {
-        width: 40%;
+        width: 45%;
     }
     
     .contact-section .content-wrapper h2 {
@@ -547,32 +556,72 @@ aside {
         width: 40%;
     }
 
-}
+
 
 /* =====================================================================
     FAQ Page
 =====================================================================
 */
 
-.faq .content-wrapper {
-    justify-content: flex-start;
-}
+    .faq .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+        margin: 50px 0 0 0;
+    }
 
-.faq h2 {
-    width: 100%;
-}
+    .faq h2 {
+        width: 100%;
+        margin-bottom: 40px;
+    }
 
-.faq-content {
-    width: 50%;
+    .faq .faq-content { 
+        width: 47%;
+        
+    }
+    
 }
 
 /* ==========================================================================
         Desktop Styles 
+    Homepage
 ========================================================================== */
 
 @media only screen and (min-width: 1200px) {
     
+
+/* -Subscribe Form -*/
+    
+    aside .content-wrapper {
+        width: 75%;
+    }
+        
+        
+/* - Features - */
+    
+    .features article {
+    width: 20%;
+    }
+    
+/* - Reviews - */
+    .reviews img {
+        width: 50%;
+        padding-right: 25px;
+    }
+    
+    .reviews-text {
+        width: 50%;
+    }
+    
 }
+    
+/*=====================================================================
+    About Page
+=====================================================================*/
+    
+    
+    
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
