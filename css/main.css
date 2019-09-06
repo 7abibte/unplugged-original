@@ -98,14 +98,20 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    padding: 0 20px;
+}
+
 .content-wrapper {
     width: 90%;
+    margin: 50px 0; 
 }
 
 
 /* -------- Base Header - Footer Styles ------------ */
 
-header, footer {
+header, 
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,7 +164,7 @@ header nav ul li {
 /* --- Footer Styles --- */
 
 footer {
-    
+    flex-direction: column;
 }
 
 footer p {
@@ -171,20 +177,13 @@ footer .content-wrapper {
 }
 
 .footer-content {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+    text-align: center;
 }
 
 footer .contact {
     margin-bottom: 50px;
 }
 
-footer .social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 footer .social-icons {
     display: flex;
@@ -205,7 +204,6 @@ footer .copyright {
 /* ---------------- Main Mobile Styles Homepage -------------- */
 
 
-
 /* --- Hero Area --- */
 
 .hero-area {
@@ -223,13 +221,15 @@ aside {
     flex-flow: row wrap;
 }
 
-.form-description {
-    
+.form {
+    display: flex;
+    flex-flow: column;
 }
 
-.form {
-    
+.form input {
+    margin: 5px;
 }
+
 
 /* --- Features Area --- */
 
@@ -284,6 +284,10 @@ aside {
     margin: 20px 0;
 }
 
+/* --- Contact Area --- */
+
+
+
 /* ---------------- Main Mobile Styles About Page -------------- */
 
 .mission {
@@ -291,10 +295,6 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-}
-
-.mission-content {
-    
 }
 
 .map {
@@ -307,6 +307,8 @@ aside {
     align-items: center;
     flex-flow: row wrap;
 }
+
+
 
 .contact-content p {
     margin: 0;
@@ -425,18 +427,135 @@ aside {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+/* --- Tablet Styles ---*/
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+
+/* - Header */
+    
+    header .header-divider {
+        width: 0%;
+    }
+    
+    header .content-wrapper {
+        justify-content: space-between;
+    }
+    
+    header nav {
+        width: 20%;
+        justify-content: space-between;
+    }
+    
+    
+/* - Subscribe Form - */
+    
+    aside .content-wrapper {
+        display: flex;
+        justify-content: space-between; 
+    }
+    
+    .form-description {
+        width: 38%;
+    }
+
+    .form {
+        width: 38%;
+    }
+    
+    .form input {
+        width: 100%;
+    }
+
+
+/* - Features - */
+    
+    .features article {
+        width: 26%;
+        margin: 30px 58px;
+    }
+    
+/* - Reviews - */
+
+    .reviews article{
+        display: flex;
+    }
+    
+    .reviews-text {
+        width: 100%;
+    }
+    
+    
+    .reviews img {
+        width: 40%;
+    }
+
+    
+/* - Footer - */
+
+
+    .footer-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+
+    .contact {
+        width: 45%;
+    }
+
+    .social {
+        width: 45%;
+    }
+
+    .copyright {
+        width: 100%;
+    }
+    
+/* =====================================================================
+    About Page
+=====================================================================
+*/
+    .mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mission-content p {
+        width: 40%;
+    }
+    
+    .contact-section .content-wrapper h2 {
+        width: 75%;
+    }
+
+    .contact-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .contact-content address{
+        width: 40%;
+    }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+/* =====================================================================
+    FAQ Page
+=====================================================================
+*/
 
+.faq
+
+/* --- Desktop Styles --- */
+
+@media only screen and (min-width: 1200px) {
+    
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
