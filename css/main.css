@@ -104,15 +104,17 @@ html {
 }
 
 body {
-    padding: 0 20px;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+    color: #E2E3ED;
+    
 }
 
 
 ul,
 ol {
-    
+    font-size: 1.125em;
+    text-transform: uppercase;
 }
 
 a {
@@ -120,19 +122,28 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 2.25em;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+}
+
 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
+    font-weight: 400;
+    line-height: 1.125em;
 }
 
 h3,
 h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.125em;
+    font-weight: 400;
 }
 
 p {
-    
+    line-height: 1.35em;
 }
 
 img {
@@ -161,6 +172,8 @@ footer {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #202322
+
 }
 
 /* --- Header Styles --- */
@@ -210,6 +223,7 @@ header nav ul li {
 
 footer {
     flex-direction: column;
+    color: #ffffff;
 }
 
 footer p {
@@ -229,7 +243,6 @@ footer .contact {
     margin-bottom: 50px;
 }
 
-
 footer .social-icons {
     display: flex;
     justify-content: space-around;
@@ -246,6 +259,14 @@ footer .copyright {
     margin: 20px 0;
 }
 
+footer h4 {
+    font-style: normal;
+}
+
+address p {
+    font-size: 0.875em;
+    font-style: normal;
+}
 /* ---------------- Main Mobile Styles Homepage -------------- */
 
 
@@ -264,6 +285,7 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
 }
 
 .form {
@@ -286,6 +308,7 @@ aside {
 
 .features h2 {
     margin-bottom: 60px;
+    line-height: 1.25em;
 }
 
 .features .features-items {
@@ -318,6 +341,7 @@ aside {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background-color: #2A423A;
 }
 
 .reviews h2 {
@@ -352,8 +376,6 @@ aside {
     align-items: center;
     flex-flow: row wrap;
 }
-
-
 
 .contact-content p {
     margin: 0;
@@ -469,13 +491,42 @@ aside {
   clear: both;
 }
 
+
+
+/* ======================================================
+Homepage Form Styling
+=========================================================
+*/
+
+aside .form {
+    margin-top: 30px;
+}
+
+input[type=text] {
+    box-sizing: border-box; 
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+}
+
+input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+}
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-
 
 /* ==========================================================================
         Tablet Styles
@@ -516,8 +567,7 @@ aside {
     }
     
     .form input {
-        width: 99%;
-        box-sizing: border-box;
+
     }
 
 
