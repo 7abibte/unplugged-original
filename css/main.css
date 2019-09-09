@@ -138,7 +138,7 @@ h2 {
 h3,
 h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.125em;
+    font-size: 1.3em;
     font-weight: 400;
 }
 
@@ -151,7 +151,7 @@ img {
 }
 
 figure {
-    
+    margin: 0;
 }
 
 address {
@@ -190,14 +190,17 @@ header .content-wrapper {
     margin: 0;
 }
 
-header img {
-    
+header figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .header-divider {
     width: 100%;
     height: 1px;
-    margin: 10px 0 20px 0;
+    margin: 5px 0 10px 0;
 }
 
 header nav {
@@ -247,13 +250,9 @@ footer .social-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 30px 0;
 }
 
-footer .social-icons p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 footer .copyright {
     margin: 20px 0;
@@ -273,6 +272,7 @@ address p {
 /* --- Hero Area --- */
 
 .hero-area {
+    height: 700px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -295,8 +295,12 @@ aside {
     flex-flow: column;
 }
 
+.form h3 {
+    margin: 10px 0;
+}
+
 .form input {
-    margin: 5px;
+    margin: 5px 0;
 }
 
 
@@ -323,16 +327,25 @@ aside {
 }
 
 .features article {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     width: 55%;
     margin: 30px 0;
 }
 
-.features p {
-    margin: 0;
+.features .fontawesome-icon {
+    width: 50%;
+    margin: 25px 0;
 }
 
-.font-awesome-icon {
-    
+.features p {
+    margin: 0;
+    text-align: center;
+}
+
+.fontawesome-icon {
+   
 }
 
 .features-item-description {
@@ -356,6 +369,7 @@ aside {
     width: 55%;
     margin: 20px 0;
 }
+
 
 /* --- Contact Area --- */
 
@@ -509,9 +523,7 @@ Homepage Form Styling
 =========================================================
 */
 
-aside .form {
-    margin-top: 30px;
-}
+
 
 input[type=text] {
     box-sizing: border-box; 
@@ -550,7 +562,36 @@ input[type=button] {
 
 @media only screen and (min-width: 768px) {
 
+    
+    /* Global Styles */
+    
+    aside .form {
+        margin-top: 25px;
+    }
+    
+    h1 {
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-size: 2.25em;
+    }
+    
+    h3,
+    h4 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+    
+    
 /* - Header */
+    
+    header figure {
+        width: 25%;
+    }
     
     header .header-divider {
         width: 0%;
@@ -565,6 +606,10 @@ input[type=button] {
         justify-content: space-between;
     }
     
+    header li {
+        padding: 0 20px;
+    }
+    
     
 /* - Subscribe Form - */
     
@@ -574,23 +619,31 @@ input[type=button] {
     }
     
     .form-description {
-        width: 38%;
+        width: 45%;
     }
 
     .form {
-        width: 38%;
+        width: 45%;
     }
     
-    .form input {
-
+    .form h3 {
+        margin: 0;
     }
-
+  
 
 /* - Features - */
     
     .features article {
         width: 26%;
         margin: 30px 58px;
+    }
+    
+    .features .fontawesome-icon {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin: 20px 0;
+       
     }
     
 /* - Reviews - */
@@ -600,12 +653,20 @@ input[type=button] {
     }
     
     .reviews-text {
-        width: 100%;
+        padding-left: 15px;
+        width: 50%;
     }
     
-    .reviews img {
-        width: 40%;
-        padding-right: 20px;
+    .reviews figure {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    
+    .reviews h3 {
+        margin: 0;
     }
 
     
@@ -620,15 +681,22 @@ input[type=button] {
         flex-flow: row wrap;
         justify-content: center;
         align-items: flex-start;
-
     }
 
     .contact {
-        width: 45%;
+        width: 50%;
     }
 
     .social {
-        width: 45%;
+        width: 50%;
+    }
+    
+    footer .social-icons {
+        justify-content: center;
+    }
+    
+    footer figure {
+        padding: 0 25px;
     }
 
     .copyright {
@@ -701,12 +769,41 @@ input[type=button] {
 @media only screen and (min-width: 1200px) {
     
 
+/* Global Styles */
+    
+    aside .form {
+    margin-top: 30px;
+}
+
+    
+    h1 {
+        font-size: 3.75em;
+    }
+    
+    h2 {
+        font-size: 2.25em;
+    }
+    
+    h3,
+    h4 {
+        font-size: 1.875em;
+    }
+    
+    p {
+        font-size: 1.125em;
+    }
+    
+    
+/* Header */
+    
+    header figure {
+        width: 20%;
+    }
 /* -Subscribe Form -*/
     
     aside .content-wrapper {
         width: 75%;
-    }
-        
+    } 
         
 /* - Features - */
     
@@ -714,14 +811,9 @@ input[type=button] {
     width: 20%;
     }
     
-/* - Reviews - */
-    .reviews img {
-        width: 50%;
-        padding-right: 25px;
-    }
-    
-    .reviews-text {
-        width: 50%;
+/* - Footer - */
+    footer figure {
+        padding: 0 30px;
     }
     
 }
