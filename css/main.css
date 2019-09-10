@@ -246,13 +246,19 @@ footer .contact {
     margin-bottom: 50px;
 }
 
+footer .contact p {
+    font-size: 1em;
+}
+
 footer .social-icons {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin: 30px 0;
 }
 
+footer i {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
 
 footer .copyright {
     margin: 20px 0;
@@ -334,23 +340,16 @@ aside {
     margin: 30px 0;
 }
 
-.features .fontawesome-icon {
-    width: 50%;
-    margin: 25px 0;
-}
+.features i {
+    font-size: 5em;
+    margin-bottom: 30px;
+    }
 
 .features p {
     margin: 0;
     text-align: center;
 }
 
-.fontawesome-icon {
-   
-}
-
-.features-item-description {
-    
-}
 
 /* --- Reviews Area ---*/
 
@@ -385,8 +384,20 @@ aside {
     background-color: #527158
 }
 
-.map {
+.map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 80%;
+    overflow: hidden;
+    position: relative;
+}
     
+.map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .contact-section {
@@ -396,6 +407,7 @@ aside {
     flex-flow: row wrap;
     background-color: #2A423A;
 }
+
 
 .contact-content h4 {
      font-style: normal;
@@ -638,12 +650,8 @@ input[type=button] {
         margin: 30px 58px;
     }
     
-    .features .fontawesome-icon {
-        display: flex;
-        justify-content: center;
-        width: 60%;
-        margin: 20px 0;
-       
+    .features i {
+          font-size: 4.5em;
     }
     
 /* - Reviews - */
@@ -695,7 +703,7 @@ input[type=button] {
         justify-content: center;
     }
     
-    footer figure {
+    footer i {
         padding: 0 25px;
     }
 
@@ -733,7 +741,10 @@ input[type=button] {
     .contact-content address{
         width: 40%;
     }
-
+    
+    .map figure {
+        padding-bottom: 50%;
+    }
 
 
 /* =====================================================================
@@ -812,29 +823,21 @@ input[type=button] {
     }
     
 /* - Footer - */
-    footer figure {
-        padding: 0 30px;
+
+    footer i {
+        padding: 0 35px;
     }
     
-}
+
     
 /*=====================================================================
     About Page
 =====================================================================*/
-.map figure {
-    width: 100%;
-    height: 0;
-    padding-bottom: 80%;
-    overflow: hidden;
-    position: relative;
-}
+
+ .map figure {
+        padding-bottom: 40%;
+    }
     
-.map iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 /* ==========================================================================
    Print styles.
