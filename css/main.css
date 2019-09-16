@@ -100,13 +100,14 @@ textarea {
 /* ---------- General Styles --------- */
 
 html {
-    font-size: 16px;
+    font-size: 16px; 
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     color: #E2E3ED;
+    background-color: #202322;
 }
 
 
@@ -215,6 +216,7 @@ header nav ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
+
 }
 
 
@@ -433,7 +435,7 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    margin: 50px 0 0 0;
+    margin: 50px 0 50px 0;
 }
 
 .faq h2 {
@@ -618,6 +620,10 @@ input[type=button] {
         justify-content: space-between;
     }
     
+    header nav ul {
+        width: 50%;
+    }
+    
     header li {
         padding: 0 20px;
     }
@@ -757,17 +763,12 @@ input[type=button] {
         justify-content: space-between;
         align-items: center;
         flex-flow: row wrap;
-        margin: 50px 0 0 0;
+        margin: 50px 0 50px 0;
     }
 
     .faq h2 {
         width: 100%;
         margin-bottom: 40px;
-    }
-
-    .faq .faq-content { 
-        width: 47%;
-        
     }
     
 }
@@ -810,6 +811,11 @@ input[type=button] {
     header figure {
         width: 20%;
     }
+    
+    header nav ul {
+        width: 100%;
+    }
+    
 /* -Subscribe Form -*/
     
     aside .content-wrapper {
@@ -837,6 +843,12 @@ input[type=button] {
  .map figure {
         padding-bottom: 40%;
     }
+/*=====================================================================
+    FAQ Page
+=====================================================================*/ 
+    .faq .faq-content { 
+        width: 47%;
+}
     
 }
 /* ==========================================================================
