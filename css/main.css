@@ -106,8 +106,8 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
-    color: #E2E3ED;
-    background-color: #202322;
+    color: #6E7D8C;
+    background-color: #F9FFFF;
 }
 
 
@@ -173,14 +173,13 @@ footer {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background-color: #202322
-
+    background-color: #82ABA1;
 }
 
 /* --- Header Styles --- */
 
 header {
-    padding: 15px 0;
+    padding: 8px 0;
 }
 
 header .content-wrapper {
@@ -191,17 +190,30 @@ header .content-wrapper {
     margin: 0;
 }
 
-header figure {
+.logo {
     display: flex;
+    flex: row wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 20%;
+}
+
+
+header i {
+    font-size: 3em;
+    color: #FFC9B5;
+    padding-right: 10px;
+}
+
+header h1 {
+    font-size: 1.5em;
+    color: #6B55B5;
 }
 
 .header-divider {
     width: 100%;
     height: 1px;
-    margin: 5px 0 10px 0;
+    margin: 0;
 }
 
 header nav {
@@ -216,7 +228,7 @@ header nav ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
-
+    margin: 0;
 }
 
 
@@ -228,7 +240,8 @@ header nav ul li {
 
 footer {
     flex-direction: column;
-    color: #ffffff;
+    color: #6E7D8C;
+    background-color: #F9FFFF;
 }
 
 footer p {
@@ -280,12 +293,41 @@ address p {
 /* --- Hero Area --- */
 
 .hero-area {
-    height: 700px;
+    height: auto;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background: url('../img/jake-melara.jpg') center no-repeat #333;
+    background: url('../img/grass-white.jpg') center no-repeat #333;
     background-size: cover;
+}
+/* DFF3E4 */
+
+.hero-divs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-area figure {
+    width: 40%;
+    display: flex;
+    flex: row wrap; 
+}
+
+.hero-text {
+    width: 50%;
+    color: #6E7D8C;
+    text-align: justify;
+}
+
+.hero-area img {
+    border-radius: 50%
+}
+
+.hero-area h1 {
+    color: #6B55B5;
+    text-align: center;
 }
 
 /* --- Subcribe Area --- */
@@ -318,8 +360,7 @@ aside {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background: url(../img/rawpixel.jpg) center no-repeat;
-    background-size: cover;
+    background-color: #F9FFFF;
 }
 
 .features h2 {
@@ -330,7 +371,7 @@ aside {
 .features .features-items {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: row wrap;
 }
 
@@ -340,6 +381,20 @@ aside {
     justify-content: center;
     width: 55%;
     margin: 30px 0;
+    padding: 0 15px;
+}
+
+.features-items video,
+.features-items img {
+    height: 25em;
+    width: auto;
+    margin-bottom: 1em;
+    padding: 0.5em;  
+}
+
+.horizontal img {
+    width: 120%;
+    height: auto;
 }
 
 .features i {
@@ -352,6 +407,12 @@ aside {
     text-align: center;
 }
 
+hr {
+    border-top: 0.1em solid;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 
 /* --- Reviews Area ---*/
 
@@ -362,8 +423,14 @@ aside {
     background-color: #2A423A;
 }
 
+.reviews video {
+    width: 100%;
+    text-align: center;
+}
+
 .reviews h2 {
     margin-bottom: 40px;
+    color: #F9FFFF;
 }
 
 .reviews h3 {
@@ -628,6 +695,17 @@ input[type=button] {
         padding: 0 20px;
     }
     
+    .logo {
+        justify-content: flex-start;
+    }
+    
+    
+/* - Hero Area - */
+    
+    .hero-area figure {
+        width: 30%;
+    }
+    
     
 /* - Subscribe Form - */
     
@@ -664,6 +742,7 @@ input[type=button] {
 
     .reviews article {
         display: flex;
+        justify-content: center;
     }
     
     .reviews-text {
@@ -671,12 +750,8 @@ input[type=button] {
         width: 50%;
     }
     
-    .reviews figure {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: row wrap;
+    .reviews video {
+        width: 60%;
     }
     
     .reviews h3 {
